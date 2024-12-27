@@ -1,0 +1,97 @@
+.itemBox {
+  width: 100%;
+}
+.img {
+  width: 100%;
+  border-radius: 1rem;
+  height: 100%;
+  display: block;
+}
+
+.imgBox {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.addToCart {
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: var(--rose-50);
+  width: 75%;
+  max-height: 25%;
+  border: 2px solid var(--rose-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: var(--red);
+}
+
+.addToCartHovered {
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: var(--red);
+  width: 75%;
+  max-height: 25%;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: var(--rose-50);
+}
+
+.cartModifyBox {
+  fill: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--rose-50);
+  padding: 0.3rem;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.cartModifyBox:hover {
+  background-color: red;
+}
+
+.category {
+  color: var(--rose-500);
+  font-size: 1.2rem;
+}
+
+.price {
+  color: var(--red);
+}
+
+@media (max-width: 420px) {
+  .itemBox {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .addToCart,
+  .addToCartHovered {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 600px) {
+  .addToCart,
+  .addToCartHovered {
+    font-size: 2vw;
+  }
+}

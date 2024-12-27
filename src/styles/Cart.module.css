@@ -1,0 +1,21 @@
+.cartBox {
+  border-radius: 1rem;
+  background-color: var(--rose-50);
+  padding: 2rem;
+  flex-grow: 1;
+  align-self: flex-start; /* Optional: Align the box to the start of the flex parent */
+}
+
+.centerEmptyCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartHeader {
+  color: var(--red);
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+}

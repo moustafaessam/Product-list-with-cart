@@ -1,0 +1,35 @@
+.menu {
+  width: 65%;
+}
+
+.menuHeader {
+  margin-bottom: 3rem;
+}
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 940px) {
+  .menu {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu {
+    width: 100%;
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
