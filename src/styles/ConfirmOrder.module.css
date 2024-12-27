@@ -1,0 +1,110 @@
+.modalBackground {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmOrderMainBox {
+  background-color: var(--rose-50);
+  width: 500px;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 1.4rem;
+  overflow: auto;
+  max-height: 100vh;
+}
+
+.confirmOrderHeader {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.confirmOrderEnjoyNote {
+  font-size: 1.4rem;
+  color: var(--rose-400);
+}
+
+.confirmedItemsBox {
+  margin: 2rem 0;
+  background-color: var(--rose-100);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.4rem;
+}
+
+.confirmedItem {
+  display: flex;
+  gap: 1rem;
+}
+
+.itemDetails {
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+.detailRed {
+  color: var(--red);
+}
+
+.detailRose {
+  margin-left: 0.5rem;
+  color: var(--rose-300);
+}
+
+.totalItemPrice {
+  flex-grow: 1;
+  align-self: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.thumbnailImg {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.3rem;
+}
+
+.orderTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orderTotalSmall {
+  font-size: 1.2rem;
+}
+
+.orderTotalBold {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.closeModalButton {
+  border-radius: 3rem;
+  width: 100%;
+  background-color: var(--red);
+  padding: 1rem;
+  border: none;
+  color: var(--rose-50);
+  cursor: pointer;
+}
+
+.closeModalButton:hover {
+  background-color: hsl(14, 86%, 30%);
+}
+
+@media (max-width: 951px) {
+  .confirmOrderMainBox {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}

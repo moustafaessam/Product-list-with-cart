@@ -3,7 +3,8 @@
   background-color: var(--rose-50);
   padding: 2rem;
   flex-grow: 1;
-  align-self: flex-start; /* Optional: Align the box to the start of the flex parent */
+  align-self: flex-start;
+  min-width: 20rem;
 }
 
 .centerEmptyCart {
@@ -13,9 +14,99 @@
   align-items: center;
 }
 
+.emptyCartImage {
+  max-width: 12.8rem;
+}
+
 .cartHeader {
   color: var(--red);
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 4rem;
+}
+
+.itemBox {
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+.itemHeader {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.itemPriceBox {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  position: relative;
+}
+
+.count {
+  color: var(--red);
+}
+
+.price {
+  color: var(--rose-300);
+}
+
+.totalPriceItem {
+  color: var(--rose-400);
+}
+.removeItemImgContainer {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  padding: 0.2rem;
+  max-height: 20px;
+  border: 1px solid var(--rose-400);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.removeItem {
+  height: 90%;
+}
+
+.orderTotalBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orderTotal {
+  font-size: 1.2rem;
+}
+
+.totalPrice {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.carbonFreeNoteBox {
+  margin: 2rem 0;
+  background-color: var(--rose-100);
+  padding: 1.3rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showModalButton {
+  border-radius: 3rem;
+  width: 100%;
+  background-color: var(--red);
+  padding: 1rem;
+  border: none;
+  color: var(--rose-50);
+  cursor: pointer;
+}
+
+.showModalButton:hover {
+  background-color: hsl(14, 86%, 30%);
 }

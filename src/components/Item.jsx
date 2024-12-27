@@ -3,7 +3,7 @@ import data from "../assets/data.json";
 import { useContext, useState } from "react";
 import { MyContext } from "../App";
 
-function Item({ itemNumber }) {
+function Item({ itemNumber, itemNum, setItemNum }) {
   const { count, dispatch } = useContext(MyContext);
   const [isHovered, setHovered] = useState(false);
 
@@ -32,14 +32,27 @@ function Item({ itemNumber }) {
           >
             <div
               className={styles.cartModifyBox}
-              onClick={() => dispatch({ type: "decrement", itemNumber })}
+              onClick={() => {
+                dispatch({ type: "decrement", itemNumber });
+
+                count[itemNumber].count > 0
+                  ? setItemNum((pre) => {
+                      return pre - 1;
+                    })
+                  : pre;
+              }}
             >
               <img src="/images/icon-decrement-quantity.svg" />
             </div>
-            {count[itemNumber]}
+            {count[itemNumber].count}
             <div
               className={styles.cartModifyBox}
-              onClick={() => dispatch({ type: "increment", itemNumber })}
+              onClick={() => {
+                dispatch({ type: "increment", itemNumber });
+                setItemNum((pre) => {
+                  return pre + 1;
+                });
+              }}
             >
               <img src="/images/icon-increment-quantity.svg" />
             </div>

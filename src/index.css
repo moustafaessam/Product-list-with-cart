@@ -61,3 +61,10 @@ body {
     font-size: 40%;
   }
 }
+
+hr {
+  background-color: hsla(30, 18%, 87%, 0.643);
+  border: none;
+  height: 1px;
+  margin-bottom: 1rem;
+}
